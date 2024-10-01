@@ -82,9 +82,7 @@ Se proporciona el método doGet de un servlet.
 
 ### Pasos
 1. Crea un proyecto llamado **webapp-ut03** con el que vamos a trabajar en esta unidad de trabajo.
-
 2. Crea un servlet al que vas a añadir el código del método GET. El url pattern del dicho servlet será **cabeceras-request**
-
 3. Ejecuta el servlet y observa lo que recibes por pantalla.
-
 4. Mejora tu aplicación web incluyendo JSP.
+5. Ahora aprenderás a usar JSTL para mejorar tu página JSP. 
