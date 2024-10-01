@@ -1,4 +1,4 @@
-# Ejercicio 1: cabeceras HTTP
+# Ejercicio 1: cabeceras HTTP del request
 
 Se proporciona el método doGet de un servlet.
 
@@ -86,3 +86,26 @@ Se proporciona el método doGet de un servlet.
 3. Ejecuta el servlet y observa lo que recibes por pantalla.
 4. Mejora tu aplicación web incluyendo JSP.
 5. Ahora aprenderás a usar JSTL para mejorar tu página JSP. 
+
+# Ejercicio 2: cabeceras HTTP del response
+
+Continuamos con el mismo proyecto.
+
+Añade esta página index.html:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT03</title>
+</head>
+<body>
+    <h1>TRABAJANDO CON CABECERAS HTTP</h1>
+    <p><a href="cabeceras-request">Obtener información de la cabecera HTTP (request)</a></p>
+    <p><a href="productos.xls">Exportar a XLS</a></p>
+    <p><a href="productos.json">Exportar a JSON</a></p>
+</body>
+</html>
+```
