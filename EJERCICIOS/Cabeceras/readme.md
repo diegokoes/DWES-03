@@ -94,6 +94,8 @@ Para ello, ee proporciona el método doGet de un servlet.
 
 Continuamos con el mismo proyecto.
 
+Vamos a listar productos en diferentes formatos.
+
 Añade esta página index.html:
 
 ```
@@ -112,3 +114,4 @@ Añade esta página index.html:
 </body>
 </html>
 ```
+
