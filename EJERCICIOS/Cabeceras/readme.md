@@ -115,3 +115,31 @@ Añade esta página index.html:
 </html>
 ```
 
+![alt text](image.png)
+
+### Generar informe de productos XLS
+
+Vamos a exportar los productos a un archivo XSL sencillo, una tabla con datos.
+
+Si queremos trabajar con xsl de una forma más compleja debemos utilizar una API específica, por ejemplo, con Apache POI es una API Java para importar y exportar datos para documentos Microsoft(Excel, Word, Project, etc.)...
+
+1. Creamos clase Producto.
+2. Creamos los servicios ProductoService (interface) y ProductoServiceImpl con datos fijos, no cogidos de una base de datos.
+3. Creamos el controlador, ProductoXlsServlet.
+4. En el navegador ponemos la ruta al servlet con la extensión xsl y por código detecta que va a generar un xsl en vez de un html:
+@WebServlet({"/productos.xls", "/productos.html", "/productos"})
+
+OJO!!! No es una extensión real. Es simplemente el nombre que le hemos dados, no hace falta que tenga el .xls, podría haberlo llamado productosXSL….
+
+![alt text](image-2.png)
+
+### Generar informe de productos JSON
+
+1. Vamos a usar la librería Jackson. Podríamos usar también la librería GSON.
+2. Necesitamos añadir en el pom.xml la dependencia de Jackson.
+3. Creamos en controllers, el Servlet ProductoJsonServlet.
+
+Ahora nuestro Servlet puede hacer funcionar como un API Rest y devolver un JSON en vez de un HTML.
+
+![alt text](image-1.png)
+
