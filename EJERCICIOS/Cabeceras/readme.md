@@ -117,6 +117,12 @@ Añade esta página index.html:
 
 ![alt text](image.png)
 
+
+Ahora nuestro proyecto tendrá una estructura de fuentes Java similar a la siguiente:
+
+![alt text](image-3.png)
+
+
 ### Generar informe de productos XLS
 
 Vamos a exportar los productos a un archivo XSL sencillo, una tabla con datos.
@@ -137,6 +143,14 @@ OJO!!! No es una extensión real. Es simplemente el nombre que le hemos dados, n
 
 1. Vamos a usar la librería Jackson. Podríamos usar también la librería GSON.
 2. Necesitamos añadir en el pom.xml la dependencia de Jackson.
+```
+      <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+```
 3. Creamos en controllers, el Servlet ProductoJsonServlet.
 
 Ahora nuestro Servlet puede hacer funcionar como un API Rest y devolver un JSON en vez de un HTML.
