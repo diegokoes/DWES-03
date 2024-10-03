@@ -182,11 +182,28 @@ Vamos a la página https://www.postman.com/ lo descargamos e instalamos ya que n
 
 ![image](https://github.com/user-attachments/assets/18c9941f-14f0-468d-9fb3-78795986d5f7)
 
+___
+
 ![image](https://github.com/user-attachments/assets/4241847b-6cd4-41a6-b603-ad695d1652c2)
 
 
 Para verificar en linux la arquitectura (x64 o arm64) usamos el comando: uname -m
 
+
+#### Para probar el método post:
+
+![image](https://github.com/user-attachments/assets/0f27c351-506a-4cda-ac03-094819f05c9d)
+
+___
+
+![image](https://github.com/user-attachments/assets/ce7eeb44-ecab-4fd1-bf3e-8b82489e926c)
+
+___
+
+![image](https://github.com/user-attachments/assets/db577665-3ece-411b-9b65-b4a2859f9912)
+
+
+Esto ha servido como práctica resumen para trabajar con servicios API Rest con Servlets, tanto para listar o consultar con GET, como para enviar y guardar con POST.
 
 
 
