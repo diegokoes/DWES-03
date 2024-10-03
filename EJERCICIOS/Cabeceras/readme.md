@@ -173,7 +173,18 @@ Enviar datos a nuestro backend.
 
 Para probarlo necesitamos un cliente HTTP, no puedo ser un navegador, debe ser un cliente que pueda enviar y recibir datos a un servicio web.
 
-Usaremos **PostMan** que sirve para probar datos de servicios web API Rest.
+Podemos usar diferentes herramientas como cliente HTTP.
+
+#### THUNDER CLIENT
+
+Lo más sencillo es usar la extensión Thunder client de Visual Studio Code. https://www.thunderclient.com/
+
+Thunder Client es una extensión para VSCode para el consumo de Rest API.
+
+![Screenshot_20241003_180038-1](https://github.com/user-attachments/assets/90456f5d-0d2b-493b-8520-61a81849ba99)
+
+
+#### POSTMAN
 
 ![image](https://github.com/user-attachments/assets/2d46ddd2-05a3-41b1-9bd3-9cd4e92a4e4f)
 
