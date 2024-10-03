@@ -159,7 +159,7 @@ Si queremos trabajar con xsl de una forma más compleja debemos utilizar una API
 
 1. Creamos clase Producto.
 2. Creamos los servicios ProductoService (interface) y ProductoServiceImpl con datos fijos, no cogidos de una base de datos.
-3. Creamos el controlador, ProductoXlsServlet.
+3. Creamos el controlador, ProductoXslServlet.
 4. En el navegador ponemos la ruta al servlet con la extensión xsl y por código detecta que va a generar un xsl en vez de un html:
 @WebServlet({"/productos.xls", "/productos.html", "/productos"})
 
