@@ -178,10 +178,14 @@ Usaremos **PostMan** que sirve para probar datos de servicios web API Rest.
 ![image](https://github.com/user-attachments/assets/2d46ddd2-05a3-41b1-9bd3-9cd4e92a4e4f)
 
 
-Vamos a la página https://www.postman.com/ lo descargamos e instalamos o lo usamos directamente vía web.
+Vamos a la página https://www.postman.com/ lo descargamos e instalamos ya que no podemos usarlo directamente vía web porque trabajamos en local (localhost):
 
 ![image](https://github.com/user-attachments/assets/18c9941f-14f0-468d-9fb3-78795986d5f7)
 
+![image](https://github.com/user-attachments/assets/4241847b-6cd4-41a6-b603-ad695d1652c2)
+
+
+Para verificar en linux la arquitectura (x64 o arm64) usamos el comando: uname -m
 
 
 
