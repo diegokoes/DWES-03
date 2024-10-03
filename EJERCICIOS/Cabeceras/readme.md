@@ -159,7 +159,11 @@ Ahora nuestro Servlet puede hacer funcionar como un API Rest y devolver un JSON 
 
 ### Enviar un JSON a un Servlet
 
-Enviar datos a nuestro backend. Lo haremos con PostMan. 
+Enviar datos a nuestro backend. 
+
+Para probarlo necesitamos un cliente HTTP, no puedo ser un navegador, debe ser un cliente que pueda enviar y recibir datos a un servicio web.
+
+Usarmeos PostMan que sirve para probar datos de servicios web API Rest.
 
 Vamos a la página https://www.postman.com/ lo descargamos e instalamos.
 
