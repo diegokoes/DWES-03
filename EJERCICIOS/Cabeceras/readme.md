@@ -85,10 +85,28 @@ Para ello, ee proporciona el método doGet de un servlet.
 
 ### Pasos
 1. Crea un proyecto llamado **webapp-ut03** con el que vamos a trabajar en esta unidad de trabajo.
-2. Crea un servlet al que vas a añadir el código del método GET. El url pattern del dicho servlet será **cabeceras-request**
-3. Ejecuta el servlet y observa lo que recibes por pantalla.
-4. Mejora tu aplicación web incluyendo JSP.
-5. Después aprenderás a usar JSTL para mejorar tu página JSP. 
+2. Crea la siguiente página index.html:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT03</title>
+</head>
+<body>
+    <h1>TRABAJANDO CON CABECERAS HTTP</h1>
+    <p><a href="cabeceras-request-jsp">Obtener información de la cabecera HTTP (request)</a></p>
+    <p><a href="productos.xls">Exportar a XLS</a></p>
+    <p><a href="productos.html">Exportar a HTML</a></p>
+    <p><a href="productos.json">Exportar a JSON</a></p>
+</body>
+</html>
+```
+4. Crea un servlet al que vas a añadir el código del método GET. El url pattern del dicho servlet será **cabeceras-request**
+5. Ejecuta el servlet y observa lo que recibes por pantalla.
+6. Mejora tu aplicación web incluyendo JSP.
+7. Después aprenderás a usar JSTL para mejorar tu página JSP. 
 
 # Ejercicio 2: cabeceras HTTP del response
 
