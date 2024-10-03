@@ -173,7 +173,7 @@ Enviar datos a nuestro backend.
 
 Para probarlo necesitamos un cliente HTTP, no puedo ser un navegador, debe ser un cliente que pueda enviar y recibir datos a un servicio web.
 
-Podemos usar diferentes herramientas como cliente HTTP.
+Podemos usar diferentes herramientas como cliente HTTP como Postman o Thunder client.
 
 #### THUNDER CLIENT
 
