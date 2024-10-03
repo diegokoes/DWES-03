@@ -127,6 +127,16 @@ Ahora nuestro proyecto tendrá una estructura de fuentes Java similar a la sigui
 
 Vamos a exportar los productos a un archivo XSL sencillo, una tabla con datos.
 
+Tenemos que crear un nuevo servlet, controlador, llamado **ProductoJsonServlet** donde usaremos el método doPost para tal fin. Sigue las instrucciones de tu profesor. Deberás añadir el siguiente código:
+
+```
+        ServletInputStream jsonStream = req.getInputStream();
+        ObjectMapper mapper = new ObjectMapper();
+
+        // En vez de una lista, trabajamos con un solo producto
+        Producto producto = mapper.readValue(jsonStream, Producto.class);
+```
+
 Si queremos trabajar con xsl de una forma más compleja debemos utilizar una API específica, por ejemplo, con Apache POI es una API Java para importar y exportar datos para documentos Microsoft(Excel, Word, Project, etc.)...
 
 1. Creamos clase Producto.
