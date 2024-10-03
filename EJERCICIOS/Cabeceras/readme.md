@@ -173,9 +173,21 @@ Enviar datos a nuestro backend.
 
 Para probarlo necesitamos un cliente HTTP, no puedo ser un navegador, debe ser un cliente que pueda enviar y recibir datos a un servicio web.
 
-Usarmeos PostMan que sirve para probar datos de servicios web API Rest.
+Usaremos **PostMan** que sirve para probar datos de servicios web API Rest.
 
-Vamos a la página https://www.postman.com/ lo descargamos e instalamos.
+![image](https://github.com/user-attachments/assets/2d46ddd2-05a3-41b1-9bd3-9cd4e92a4e4f)
+
+
+Vamos a la página https://www.postman.com/ lo descargamos e instalamos o lo usamos directamente vía web.
+
+![image](https://github.com/user-attachments/assets/18c9941f-14f0-468d-9fb3-78795986d5f7)
+
+
+
+
+
+
+
 
 
 
