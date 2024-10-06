@@ -241,6 +241,19 @@ Esto ha servido como práctica resumen para trabajar con servicios API Rest con 
 
 
 
+### AMPLIACIÓN. Enviar Json con array de objetos producto
+
+Observa la siguiente captura:
+
+![image](https://github.com/user-attachments/assets/33a26559-4706-4a61-9215-ee80f2642b78)
+
+Crea un nuevo servlet que reciba un json con un array de objetos producto y devuelva una página html con esa información.
+
+Usa este código para mappear un array de objetos con Jackson:
+
+```
+List<Producto> productos = mapper.readValue(jsonStream, new TypeReference<List<Producto>>() {});
+```
 
 
 
