@@ -33,7 +33,7 @@ Lo importante es poder leer línea a línea el archivo y procesar cada línea pa
 
 PISTA: 
 - Guardad productos.csv en el directorio webapp del proyecto web.
-- El código getServletContext().getRealPath("/productos.csv") nos dará la ruta donde se cuentra dicho archivo para poderlo leer.
+- El código getServletContext().getRealPath("/productos.csv") nos dará la ruta abssoluta donde se cuentra dicho archivo para poderlo leer.
 
 
 
