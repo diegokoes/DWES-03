@@ -218,8 +218,9 @@ ___
 
 Para verificar en linux la arquitectura (x64 o arm64) usamos el comando: uname -m
 
+___
 
-#### Para probar el método post:
+#### PARA PROBAR EL MÉTODO POST, VAMOS A ENVIAR UN JSON DE LA SIGUIENTE MANERA:
 
 ![image](https://github.com/user-attachments/assets/0f27c351-506a-4cda-ac03-094819f05c9d)
 
