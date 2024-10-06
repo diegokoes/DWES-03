@@ -222,15 +222,19 @@ ___
 
 #### PARA PROBAR EL MÉTODO POST, VAMOS A ENVIAR UN JSON DE LA SIGUIENTE MANERA:
 
-![image](https://github.com/user-attachments/assets/0f27c351-506a-4cda-ac03-094819f05c9d)
+![image](https://github.com/user-attachments/assets/f8a271da-d705-4c3f-8f4a-020dfa6624f6)
 
 ___
+Aquí hay un ejemplo de JSON para probar:
 
-![image](https://github.com/user-attachments/assets/ce7eeb44-ecab-4fd1-bf3e-8b82489e926c)
-
-___
-
-![image](https://github.com/user-attachments/assets/db577665-3ece-411b-9b65-b4a2859f9912)
+```
+{
+  "id": 4,
+  "nombre": "disco ssd",
+  "tipo": "informática",
+  "precio": 600
+}
+```
 
 
 Esto ha servido como práctica resumen para trabajar con servicios API Rest con Servlets, tanto para listar o consultar con GET, como para enviar y guardar con POST.
