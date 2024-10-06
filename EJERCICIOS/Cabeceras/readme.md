@@ -321,4 +321,9 @@ public class DespacharServlet extends HttpServlet {
 
 ```
 
+# Ejercicio 5: códigos de estado de respuesta HTTP
+
+https://developer.mozilla.org/es/docs/Web/HTTP/Status
+
+
 
