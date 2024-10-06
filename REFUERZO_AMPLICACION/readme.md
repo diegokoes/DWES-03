@@ -13,7 +13,9 @@ En la clase ProductServiceImpl os propuse un reto relacionado con copia profunda
 
 # EJERCICIO 2: carga de objetos producto a través de un CSV
 
-Haced una copia del proyecto webapp_ut03 porque vais a modificar la lógica de la clase **ProductServiceImpl**.
+Cread un nuevo proyecto web.
+
+Para ello, haced una copia del proyecto webapp_ut03 porque vais a modificar la lógica de la clase **ProductServiceImpl**.
 
 En vez de crear a mano los objetos productos, debéis leer un archivo CSV y crear los objetos con los datos de dicho archivo.
 
