@@ -282,6 +282,30 @@ En él aprenderemos a usar el siguiente código:
 
 ```
 
+# Ejercicio 4: sendRedirect vs Dispatcher forward
 
+Vamos a aprender a redirigir de diferentes maneras:
+
+## Redirigir a una URL externa o cambiar la URL en el navegador
+
+```
+// Forma 1:
+//resp.setHeader("Location", req.getContextPath() + "/productos.html");
+//resp.setStatus(HttpServletResponse.SC_FOUND);
+
+// Forma 2: (mejor)
+resp.sendRedirect(req.getContextPath() + "/productos.html");
+```
+
+## Unir el request actual a otro servlet o jsp. Seguimos con el mismo request. No cambia la URL
+
+```
+// Forma 1
+getServletContext().getRequestDispatcher("/productos.jsp").forward(req, resp);
+
+// Forma 2
+request.getRequestDispatcher("/productos.jsp").forward(req, resp);
+
+```
 
 
