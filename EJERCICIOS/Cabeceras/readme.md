@@ -224,6 +224,9 @@ ___
 
 ![image](https://github.com/user-attachments/assets/f8a271da-d705-4c3f-8f4a-020dfa6624f6)
 
+El objetivo de este ejercicio es trabajar como servicios API Rest con Servlets, tanto para listar o consultar con GET, como para enviar y guardar con POST.
+
+
 ___
 Aquí hay un ejemplo de JSON para probar:
 
@@ -236,8 +239,13 @@ Aquí hay un ejemplo de JSON para probar:
 }
 ```
 
+Ten cuidado con el charset. Añade UTF-8 en el content-type para que se vean bien las eñes y acentos:
 
-Esto ha servido como práctica resumen para trabajar con servicios API Rest con Servlets, tanto para listar o consultar con GET, como para enviar y guardar con POST.
+```
+resp.setContentType("application/json;charset=UTF-8");
+```
+
+![image](https://github.com/user-attachments/assets/5c9bb60d-4e4c-4734-be25-da1f77aeecac)
 
 
 
