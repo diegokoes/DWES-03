@@ -263,6 +263,24 @@ Usa este código para mappear un array de objetos con Jackson:
 List<Producto> productos = mapper.readValue(jsonStream, new TypeReference<List<Producto>>() {});
 ```
 
+# Ejercicio 3: mostrar la hora actualizada
+
+![image](https://github.com/user-attachments/assets/4bb939f1-6a94-4ce9-b9c6-962fbddd505c)
+
+Crearemos un nuevo servlet llamado **HoraActualizadaServlet**
+
+En él aprenderemos a usar el siguiente código:
+
+```
+        resp.setHeader("refresh", "1");
+        LocalTime hora = LocalTime.now();
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("hh:mm:ss");
+
+        ...
+
+        hora.format(df)
+
+```
 
 
 
