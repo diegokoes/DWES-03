@@ -289,22 +289,35 @@ Vamos a aprender a redirigir de diferentes maneras:
 ## Redirigir a una URL externa o cambiar la URL en el navegador
 
 ```
-// Forma 1:
-//resp.setHeader("Location", req.getContextPath() + "/productos");
-//resp.setStatus(HttpServletResponse.SC_FOUND);
+@WebServlet("/redirigir")
+public class RedirigirServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // Forma 1:
+        //resp.setHeader("Location", req.getContextPath() + "/productos.html");
+        //resp.setStatus(HttpServletResponse.SC_FOUND);
 
-// Forma 2: (mejor)
-resp.sendRedirect(req.getContextPath() + "/productos");
+        // Forma 2: (mejor)        
+        resp.sendRedirect(req.getContextPath() + "/productos.html");
+    }
+}
 ```
 
 ## Unir el request actual a otro servlet o jsp. Seguimos con el mismo request. No cambia la URL
 
 ```
-// Forma 1 (recomendado)
-getServletContext().getRequestDispatcher("/productos").forward(req, resp);
+@WebServlet("/despachar")
+public class DespacharServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // Forma 1 (recomendado)
+        getServletContext().getRequestDispatcher("/productos").forward(req, resp);
 
-// Forma 2
-request.getRequestDispatcher("/productos").forward(req, resp);
+        // Forma 2
+        request.getRequestDispatcher("/productos").forward(req, resp);
+
+    }
+}
 
 ```
 
