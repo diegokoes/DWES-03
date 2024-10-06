@@ -28,6 +28,7 @@ Por ejemplo, el contenido de **productos.csv** sería:
 ```
 
 Tenéis que repasar cómo leer el contenido de un fichero de texto. Podemos hacerlo de diferentes formas. 
+
 Lo importante es poder leer línea a línea el archivo y procesar cada línea para obtener los datos necesarios para posteriormente crear los objetos.
 
 PISTA: 
