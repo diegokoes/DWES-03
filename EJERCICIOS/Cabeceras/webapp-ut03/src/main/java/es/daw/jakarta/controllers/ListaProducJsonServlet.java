@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import es.daw.jakarta.services.ProductServiceImpl;
@@ -17,8 +18,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/productos.json")
-public class ProducJsonServlet extends HttpServlet {
+@WebServlet("/lista-productos.json")
+public class ListaProducJsonServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     @Override
@@ -47,10 +48,11 @@ public class ProducJsonServlet extends HttpServlet {
 
         ObjectMapper mapper = new ObjectMapper();
 
-        Producto producto = mapper.readValue(jsonStream,Producto.class);
+        //Producto producto = mapper.readValue(jsonStream,Producto.class);
+        List<Producto> productos = mapper.readValue(jsonStream, new TypeReference<List<Producto>>() {});
 
         System.out.println("********** PRODUCTO ************");
-        System.out.println(producto);
+        productos.forEach(System.out::println);
         System.out.println("********************************");
 
 
@@ -65,12 +67,15 @@ public class ProducJsonServlet extends HttpServlet {
             out.println("    </head>");
             out.println("    <body>");
             out.println("        <h1>Detalle de producto desde Json!</h1>");
-            out.println("        <ul>");
-            out.println("           <li>Id: "+producto.getId()+"</li>");
-            out.println("           <li>Nombre: "+producto.getNombre()+"</li>");
-            out.println("           <li>Tipo: "+producto.getTipo()+"</li>");
-            out.println("           <li>Precio: "+producto.getPrecio()+"</li>");
-            out.println("        </ul>");
+            productos.forEach( p -> {
+                out.println("<h2>Producto:</h2>");
+                out.println("        <ul>");
+                out.println("           <li>Id: "+p.getId()+"</li>");
+                out.println("           <li>Nombre: "+p.getNombre()+"</li>");
+                out.println("           <li>Tipo: "+p.getTipo()+"</li>");
+                out.println("           <li>Precio: "+p.getPrecio()+"</li>");
+                out.println("        </ul>");
+            });
             out.println("    </body>");
             out.println("</html>");
         }
