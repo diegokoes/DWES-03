@@ -325,6 +325,8 @@ public class DespacharServlet extends HttpServlet {
 
 https://developer.mozilla.org/es/docs/Web/HTTP/Status
 
+___
+
 Si probramos los servlets del ejercicio 4 e inspeccionamos la red, podemos observar los códigos de estado de respuesta:
 
 ![image](https://github.com/user-attachments/assets/3e47b9f9-5725-4aef-a822-f3fc9e0c708b)
@@ -333,6 +335,8 @@ Si probramos los servlets del ejercicio 4 e inspeccionamos la red, podemos obser
 **302: Found:** Este código de respuesta significa que el recurso de la URI solicitada ha sido cambiado temporalmente.
 
 **200: OK:** La solicitud ha tenido éxito.
+
+___
 
 Por otro lado, vamos a crear un **LoginServlet** que simula el login de un usuario.
 
@@ -359,4 +363,8 @@ Si introducimos mal el login y password se monstrará el error en el navegador:
 Si coinciden, aparecerá un página html con el mensaje de éxito:
 
 ![image](https://github.com/user-attachments/assets/76f01e80-dbb6-4ed7-98e7-8ad3e7d8a10c)
+
+___
+
+## Buscar produccto. En el caso de que no se encuentre devolveremos un Status HTTP Response 404
 
