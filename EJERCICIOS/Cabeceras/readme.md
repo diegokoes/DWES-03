@@ -351,3 +351,8 @@ Aquí tienes código que te servirá de ayuda:
 ```
 
 Crea una página **login.html** con un formulario que use el método post para enviar un login y password de usuario.
+
+Si introducimos mal el login y password se monstrará el error en el navegador:
+
+![image](https://github.com/user-attachments/assets/9328e741-8e90-4459-8849-eb8667666595)
+
