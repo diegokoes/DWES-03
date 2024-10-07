@@ -294,11 +294,11 @@ public class RedirigirServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // Forma 1:
-        //resp.setHeader("Location", req.getContextPath() + "/productos.html");
+        //resp.setHeader("Location", req.getContextPath() + "/productos");
         //resp.setStatus(HttpServletResponse.SC_FOUND);
 
         // Forma 2: (mejor)        
-        resp.sendRedirect(req.getContextPath() + "/productos.html");
+        resp.sendRedirect(req.getContextPath() + "/productos");
     }
 }
 ```
