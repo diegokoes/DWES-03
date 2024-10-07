@@ -368,8 +368,47 @@ ___
 
 ## Buscar producto. En el caso de que no se encuentre devolveremos un Status HTTP Response 404
 
-Usaremos el siguiente código:
+Usaremos el siguiente código de estado:
 
 ```
 HttpServletResponse.SC_NOT_FOUND
 ```
+
+
+Implementa el servlet **BuscarProductoServlet**.
+
+La acción doPost debe obtener el parámetro nombre del request, realizar la búsqueda mediante el service (ProductoServiceImpl) y devolver el resultado como un Optional.
+
+La búsqueda se debe implementar en un nuevo método de la interface ProductoService e implementarlo en la clase ProductoServiceImpl usando el api stream de java 8, este nuevo método se debe llamar buscarProducto con la siguiente firma:
+
+```
+Optional<Producto> buscarProducto(String nombre);
+```
+
+Observa el siguiente código que te servirá de ayuda:
+
+```
+        Optional<Producto> encontrado = service.listar().stream().filter(p -> {
+            if (nombre == null || nombre.isBlank()) {
+                return false;
+            }
+            return p.getNombre().contains(nombre);
+        }).findFirst();
+        
+        if (encontrado.isPresent()) {
+            // ....
+        }
+```
+
+Haz las modificaciones oportunas para implementar la misma funcionalidad pero utilizando el método contains de un List.
+
+
+### Conclusión:
+
+Si solo necesitas verificar la existencia de un producto con el mismo nombre en listas pequeñas, y esta lógica es consistente en toda la aplicación, sobrescribir equals() y usar contains() es una opción más simple y limpia.
+
+Si la lógica de búsqueda varía o necesitas hacer coincidencias parciales, usar stream() con filter() es una mejor opción.
+
+Usar stream() es más flexible, mientras que sobrescribir equals() es más sencillo y directo, pero menos adaptable.
+
+
