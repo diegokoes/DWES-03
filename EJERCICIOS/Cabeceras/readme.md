@@ -356,3 +356,7 @@ Si introducimos mal el login y password se monstrará el error en el navegador:
 
 ![image](https://github.com/user-attachments/assets/9328e741-8e90-4459-8849-eb8667666595)
 
+Si coinciden, aparecerá un página html con el mensaje de éxito:
+
+![image](https://github.com/user-attachments/assets/76f01e80-dbb6-4ed7-98e7-8ad3e7d8a10c)
+
