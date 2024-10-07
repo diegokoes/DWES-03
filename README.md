@@ -15,7 +15,7 @@ ___
 
 Repaso del protocolo HTTP
 
-[![Alt text](https://img.youtube.com/vi/configuroweb/0.jpg)](https://www.youtube.com/watch?v=l2MihYAj0Iw)
+[![Alt text](https://img.youtube.com/vi/l2MihYAj0Iw/0.jpg)](https://www.youtube.com/watch?v=l2MihYAj0Iw)
 
 ## Página principal del curso
 [VOLVER PÁGINA PRINCIPAL](https://github.com/profeMelola/DWES-00-2024-25)
