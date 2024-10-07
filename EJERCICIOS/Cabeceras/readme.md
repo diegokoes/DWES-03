@@ -368,3 +368,8 @@ ___
 
 ## Buscar produccto. En el caso de que no se encuentre devolveremos un Status HTTP Response 404
 
+Usaremos el siguiente código:
+
+```
+HttpServletResponse.SC_NOT_FOUND
+```
