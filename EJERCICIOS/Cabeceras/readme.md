@@ -331,5 +331,21 @@ Si probramos los servlets del ejercicio 4 e inspeccionamos la red, podemos obser
 
 
 **302: Found:** Este código de respuesta significa que el recurso de la URI solicitada ha sido cambiado temporalmente.
+
 **200: OK:** La solicitud ha tenido éxito.
 
+Por otro lado, vamos a crear un **LoginServlet** que simula el login de un usuario.
+
+En el caso de que no coincida con unos valores constantes, deberá devolver un código de error 401 como que no está autorizado.
+
+Aquí tienes código que te servirá de ayuda:
+
+```
+    final static String USERNAME = "admin";
+    final static String PASSWORD = "12345";
+    ...
+
+    resp.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Lo sentimos no esta autorizado para ingresar a esta página!");
+
+
+```
