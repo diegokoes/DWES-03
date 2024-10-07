@@ -349,3 +349,5 @@ Aquí tienes código que te servirá de ayuda:
 
 
 ```
+
+Crea una página html con un formulario que use el método post para enviar un login y password de usuario.
