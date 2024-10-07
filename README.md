@@ -1,5 +1,7 @@
 # Sesiones y autenticación
 
+![image](https://github.com/user-attachments/assets/879390d2-0e86-45be-b10f-0ecdd82a081e)
+
 ![image](https://github.com/user-attachments/assets/353ed62a-8601-47e3-9824-518d8e907664)
 
 Entender qué son y cómo funcionan las cookies y sessions es indispensable para comprender el funcionamiento de las aplicaciones web y la Internet en general.
