@@ -366,7 +366,7 @@ Si coinciden, aparecerá un página html con el mensaje de éxito:
 
 ___
 
-## Buscar produccto. En el caso de que no se encuentre devolveremos un Status HTTP Response 404
+## Buscar producto. En el caso de que no se encuentre devolveremos un Status HTTP Response 404
 
 Usaremos el siguiente código:
 
