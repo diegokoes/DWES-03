@@ -15,7 +15,7 @@ ___
 
 Repaso del protocolo HTTP
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l2MihYAj0Iw?si=NHzS5fyj1YD36SBm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Alt text](https://img.youtube.com/vi/configuroweb/0.jpg)](https://www.youtube.com/watch?v=l2MihYAj0Iw)
 
 ## Página principal del curso
 [VOLVER PÁGINA PRINCIPAL](https://github.com/profeMelola/DWES-00-2024-25)
