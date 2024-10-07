@@ -325,5 +325,11 @@ public class DespacharServlet extends HttpServlet {
 
 https://developer.mozilla.org/es/docs/Web/HTTP/Status
 
+Si probramos los servlets del ejercicio 4 e inspeccionamos la red, podemos observar los códigos de estado de respuesta:
 
+![image](https://github.com/user-attachments/assets/3e47b9f9-5725-4aef-a822-f3fc9e0c708b)
+
+
+**302: Found:** Este código de respuesta significa que el recurso de la URI solicitada ha sido cambiado temporalmente.
+**200: OK:** La solicitud ha tenido éxito.
 
