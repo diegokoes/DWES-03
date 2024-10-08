@@ -400,7 +400,7 @@ Observa el siguiente código que te servirá de ayuda:
         }
 ```
 
-Haz las modificaciones oportunas para implementar la misma funcionalidad pero utilizando el método contains de un List.
+**AMPLIACIÓN!!!** Haz las modificaciones oportunas para implementar la misma funcionalidad pero utilizando el método contains de un List en vez de Optional.
 
 
 ### Conclusión:
