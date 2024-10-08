@@ -327,7 +327,7 @@ https://developer.mozilla.org/es/docs/Web/HTTP/Status
 
 ___
 
-Si probramos los servlets del ejercicio 4 e inspeccionamos la red, podemos observar los códigos de estado de respuesta:
+## Ejercicio 5.1: i probramos los servlets del ejercicio 4 e inspeccionamos la red, podemos observar los códigos de estado de respuesta:
 
 ![image](https://github.com/user-attachments/assets/3e47b9f9-5725-4aef-a822-f3fc9e0c708b)
 
@@ -338,7 +338,7 @@ Si probramos los servlets del ejercicio 4 e inspeccionamos la red, podemos obser
 
 ___
 
-Por otro lado, vamos a crear un **LoginServlet** que simula el login de un usuario.
+## Ejercicio 5.2: vamos a crear un **LoginServlet** que simula el login de un usuario.
 
 En el caso de que no coincida con unos valores constantes, deberá devolver un código de error 401 como que no está autorizado.
 
@@ -366,7 +366,7 @@ Si coinciden, aparecerá un página html con el mensaje de éxito:
 
 ___
 
-## Buscar producto. En el caso de que no se encuentre devolveremos un Status HTTP Response 404
+## Ejercicio 5.3: buscar producto. En el caso de que no se encuentre devolveremos un Status HTTP Response 404
 
 Usaremos el siguiente código de estado:
 
