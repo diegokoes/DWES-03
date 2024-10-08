@@ -81,11 +81,11 @@ if (cookies != null) {
 ```
 3. Mantenemos la lógica de mostrar los productos en una tabla html, pero si el usuario está registrado, entonces no saldrá el precio. Algo similar a esto:
 
-![image](https://github.com/user-attachments/assets/05cdd245-9e25-4f44-a0e2-2e3c70700578)
+<img src="https://github.com/user-attachments/assets/05cdd245-9e25-4f44-a0e2-2e3c70700578" height="100px"/>
 
 5. Si el usuario está registrado, entonces sí saldrá el precio en la tabla. Algo similar a esto:
    
-   ![image](https://github.com/user-attachments/assets/5fde97bf-e6b5-4353-a564-c89ebccde5e4)
+   <img src="https://github.com/user-attachments/assets/5fde97bf-e6b5-4353-a564-c89ebccde5e4" height="100px"/>
 
-6. Vamos a hacer dos controladores (servlets): LoginServlet y LogoutServlet
-7. Vamos a crear el servicio de Login: LoginService y LoginServiceImpl
+7. Vamos a hacer dos controladores (servlets): LoginServlet y LogoutServlet
+8. Vamos a crear el servicio de Login: LoginService y LoginServiceImpl
