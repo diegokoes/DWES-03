@@ -29,34 +29,6 @@ for (Cookie c : cookies) {
 
 Práctica guiada para mejorar el sistema de login.
 
-Observa el siguiente código:
-
-```
-// Forma 1: API Stream
-Cookie[] cookies = req.getCookies() != null ? req.getCookies() : new Cookie[0];
-return Arrays.stream(cookies)
-             .filter(c -> "username".equals(c.getName()))
-             .map(Cookie::getValue)
-             .findAny();
-
-```
-
-```
-// Forma 2:
-Cookie[] cookies = request.getCookies();
-String nombre = null;
-
-if (cookies != null) {
-    for (Cookie cookie : cookies) {
-        if ("username".equals(cookie.getName())) {
-            nombre = cookie.getValue();
-            break;
-        }
-    }
-}
-
-```
-
 ## Pasos:
 
 1. Reutilizaremos el proyecto webapp-ut03
@@ -89,3 +61,31 @@ if (cookies != null) {
 
 7. Vamos a hacer dos controladores (servlets): LoginServlet y LogoutServlet
 8. Vamos a crear el servicio de Login: LoginService y LoginServiceImpl
+
+Observa el siguiente código:
+
+```
+// Forma 1: API Stream
+Cookie[] cookies = req.getCookies() != null ? req.getCookies() : new Cookie[0];
+return Arrays.stream(cookies)
+             .filter(c -> "username".equals(c.getName()))
+             .map(Cookie::getValue)
+             .findAny();
+
+```
+
+```
+// Forma 2:
+Cookie[] cookies = request.getCookies();
+String nombre = null;
+
+if (cookies != null) {
+    for (Cookie cookie : cookies) {
+        if ("username".equals(cookie.getName())) {
+            nombre = cookie.getValue();
+            break;
+        }
+    }
+}
+
+```
