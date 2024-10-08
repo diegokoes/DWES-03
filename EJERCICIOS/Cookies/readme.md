@@ -27,7 +27,7 @@ for (Cookie c : cookies) {
 
 # Ejercicio 1: sistema de login con cookies. Práctica guiada
 
-Práctica guiada para mejorar el sistema de login.
+Práctica guiada para mejorar el sistema de login (https://github.com/profeMelola/DWES-03-2024-25/blob/main/EJERCICIOS/Cabeceras/readme.md#ejercicio-52-vamos-a-crear-un-loginservlet-que-simula-el-login-de-un-usuario).
 
 ## Pasos:
 
