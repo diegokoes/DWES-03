@@ -60,7 +60,7 @@ No se debe abusar del almacenamiento de objetos en Session ya que al ser por cad
       
     - En el **doGet de LoginSessionServlet** implementaremos el código para devolver una página como la siguiente:
 
-      ![image](https://github.com/user-attachments/assets/0c613f20-9036-4b0b-898a-82df3203a3e1)
+      <img src="https://github.com/user-attachments/assets/0c613f20-9036-4b0b-898a-82df3203a3e1" height="150px"/>
 
     - En el **doGet de LogoutSessionServlet** implementaremos el código para invalidar la sesión.
 
