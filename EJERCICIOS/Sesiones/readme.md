@@ -108,3 +108,10 @@ Esta clase estará compuesta de:
     private Producto producto;
 ```
 
+Crea el constructor, métodos getters and setters y añade el método de comportamiento para obtener el importe de la línea o item del producto:
+
+```
+    public int getImporte() {
+        return cantidad * producto.getPrecio();
+    }
+```
