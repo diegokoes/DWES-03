@@ -86,7 +86,7 @@ Vamos a partir de una página index.html muy sencilla con un menú para manejar 
     <li><a href="productos">Mostrar productos html</a></li>
     <li><a href="login">Login</a></li>
     <li><a href="logout">Logout</a></li>
-    <li><a href="ver-carro">ver carro</a></li>
+    <li><a href="carro/ver">ver carro</a></li>
 </ul>
 
 </body>
