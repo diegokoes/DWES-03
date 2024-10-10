@@ -42,3 +42,15 @@ Hemos compartido información perteneciente al mismo usuario entre dos Servlets.
 No se debe abusar del almacenamiento de objetos en Session ya que al ser por cada usuario si tenemos muchos usuarios concurrentes estaremos obligando al servidor a utilizar mucha memoria para almacenarlos.
 
 <i> Referencia: https://www.arquitecturajava.com/usando-java-session-en-aplicaciones-web/ </i>
+
+# Ejercicio 1: sistema de login
+
+## Pasos:
+- Crear un nuevo proyecto para tener un entorno limpio llamado **webapp-session.**
+- Reutilizaremos los servlets **LoginCookieServlet y LogoutServlet** en los que cambiaremos el uso de cookies por HttpSession. Por tanto creamos **LoginSessionServlet y LogoutSessionServlet.**
+- Añadimos una implementación del servicio de login **LoginServiceSessionImpl**
+
+
+
+
+# Ejercicio 2: carro de la compra
