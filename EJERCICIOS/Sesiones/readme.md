@@ -52,13 +52,17 @@ No se debe abusar del almacenamiento de objetos en Session ya que al ser por cad
     - En el **doPost de LoginSessionServlet** implementaremos el código para añadir a la sesión el username (login):
       
           ```
+      
             HttpSession session = req.getSession();
             session.setAttribute("username", username);
+      
           ```
       
     - En el **doGet de LoginSessionServlet** implementaremos el código para devolver una página como la siguiente:
 
       ![image](https://github.com/user-attachments/assets/0c613f20-9036-4b0b-898a-82df3203a3e1)
+
+    - En el **doGet de LogoutSessionServlet** implementaremos el código para invalidar la sesión.
 
 - Añadimos una implementación del servicio de login **LoginServiceSessionImpl**
 
