@@ -3,6 +3,7 @@ package es.daw.jakarta.services;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import es.daw.jakarta.models.Producto;
 
@@ -32,6 +33,30 @@ public class ProductServiceImpl implements ProductService{
         return new ArrayList<>(productos);
         
 
+    }
+
+    @Override
+    public Optional<Producto> buscarProducto(String nombre) {
+
+        // Forma API Stream
+
+        Optional<Producto> encontrado = listar().stream()
+            .filter( p -> p.getNombre().contains(nombre)).findFirst();
+
+        return encontrado;
+    }
+
+    @Override
+    public Producto buscarProducto2(String name) {
+        // Forma 1: tradicional
+        // Obtener la lista de productos (listar())
+        // Recorrer lista
+        // Voy producto a producto llamando a getName()
+        // Comparo el getName con el name pasado como parámetro
+        // Si coinciden devuelvo el objeto
+        // Si no coinciden devuelvo null
+        
+        return null;
     }
     
 }
