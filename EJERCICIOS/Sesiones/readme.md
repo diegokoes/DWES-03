@@ -123,7 +123,9 @@ Esta clase contendrá una lista de ItemCarro.
 
 En el constructor se inicializa la lista y solo tendrá el método get para obtener la lista.
 
-También tendrá el método de comportamiento:
+También tendrá los siguientes métodoa de comportamiento:
+
+#### addItemCarro
 
 ```
 public void addItemCarro(ItemCarro itemCarro)
@@ -143,3 +145,11 @@ Vamos a partir de este código para meter la funcionalidad:
 ```
 
 Tengo que controlar que el producto no esté repetido y voy a tener en cuenta el id y nombre como criterio para saber si dos productos son iguales.
+
+#### getTotal
+
+```
+    public int getTotal() {
+        return items.stream().mapToInt(ItemCarro::getImporte).sum();
+    }
+```
