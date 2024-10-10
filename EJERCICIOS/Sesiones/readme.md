@@ -52,7 +52,7 @@ No se debe abusar del almacenamiento de objetos en Session ya que al ser por cad
     - En el **doPost de LoginSessionServlet** implementaremos el código para añadir a la sesión el username (login):
       
           ```
-              HttpSession session = req.getSession();
+            HttpSession session = req.getSession();
             session.setAttribute("username", username);
           ```
       
