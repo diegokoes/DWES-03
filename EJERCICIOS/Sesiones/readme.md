@@ -148,8 +148,10 @@ Tengo que controlar que el producto no esté repetido y voy a tener en cuenta el
 
 #### getTotal
 
+Para obtener el importe total del carro:
+
 ```
     public int getTotal() {
-        return items.stream().mapToInt(ItemCarro::getImporte).sum();
+        // ....
     }
 ```
