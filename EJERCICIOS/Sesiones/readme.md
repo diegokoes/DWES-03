@@ -99,6 +99,7 @@ Finalmente daremos un diseño con Bootstrap.
 
 ## Modelo de datos
 
+### Clase ItemCarro
 Debemos añadir la clase ItemCarro para gestionar la cantidad de productos de un producto concreto.
 
 Esta clase estará compuesta de:
@@ -115,3 +116,18 @@ Crea el constructor, métodos getters and setters y añade el método de comport
         return cantidad * producto.getPrecio();
     }
 ```
+
+### Clase Carro
+
+Esta clase contendrá una lista de ItemCarro.
+
+En el constructor se inicializa la lista y solo tendrá el método get para obtener la lista.
+
+También tendrá el método de comportamiento:
+
+```
+public void addItemCarro(ItemCarro itemCarro)
+```
+
+Hay que comprobar que solo puede haber un item del carro, porque lo que se modifica es la cantidad del mismo producto, no se añade otro item.
+
