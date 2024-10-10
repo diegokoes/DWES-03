@@ -384,21 +384,29 @@ La búsqueda se debe implementar en un nuevo método de la interface ProductoSer
 ```
 Optional<Producto> buscarProducto(String nombre);
 ```
+___
 
-Observa el siguiente código que te servirá de ayuda:
+**Observa el siguiente código que te servirá de ayuda:**
 
 ```
         Optional<Producto> encontrado = service.listar().stream().filter(p -> {
-            if (nombre == null || nombre.isBlank()) {
-                return false;
-            }
             return p.getNombre().contains(nombre);
         }).findFirst();
-        
+
+        ...
         if (encontrado.isPresent()) {
             // ....
         }
 ```
+
+**Explicación del código:**
+
+- service.listar().stream(): Se asume que service.listar() devuelve una lista de Producto. stream() convierte esta lista en un flujo (stream) de datos, permitiendo aplicar operaciones funcionales como filter.
+- filter(p -> { ... }): filter es una operación intermedia del stream que permite seleccionar solo aquellos elementos que cumplan con una condición. La condición se define en el bloque de código { ... }. En este caso, p -> { ... } es una expresión lambda donde p representa cada objeto Producto en el flujo.
+- return p.getNombre().contains(nombre);: Si nombre no es null ni está en blanco, se verifica si el nombre del producto (p.getNombre()) contiene el valor de nombre. Solo los productos que cumplan esta condición serán incluidos en el filtrado.
+- findFirst(): Esta operación terminal del stream devuelve el primer elemento que cumple con la condición del filtro. El resultado es un Optional<Producto>, lo que significa que el valor puede ser un Producto si existe algún elemento que cumpla con el filtro, o Optional.empty() si no se encontró ninguno.
+- encontrado.isPresent(): Esta es una llamada al método isPresent() del Optional. Este método devuelve true si encontrado contiene un valor (es decir, si se encontró un producto que cumple con la condición); de lo contrario, devuelve false.
+___
 
 **AMPLIACIÓN!!!** Haz las modificaciones oportunas para implementar la misma funcionalidad pero utilizando el método contains de un List en vez de Optional.
 
