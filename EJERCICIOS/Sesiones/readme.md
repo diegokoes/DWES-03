@@ -41,4 +41,4 @@ Hemos compartido información perteneciente al mismo usuario entre dos Servlets.
 
 No se debe abusar del almacenamiento de objetos en Session ya que al ser por cada usuario si tenemos muchos usuarios concurrentes estaremos obligando al servidor a utilizar mucha memoria para almacenarlos.
 
-<small> Referencia: https://www.arquitecturajava.com/usando-java-session-en-aplicaciones-web/ </small>
+<pre> Referencia: https://www.arquitecturajava.com/usando-java-session-en-aplicaciones-web/ </pre>
