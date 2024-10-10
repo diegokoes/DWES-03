@@ -59,7 +59,7 @@ Práctica guiada para mejorar el sistema de login (https://github.com/profeMelol
    
    <img src="https://github.com/user-attachments/assets/5fde97bf-e6b5-4353-a564-c89ebccde5e4" height="100px"/>
 
-7. Vamos a hacer dos controladores (servlets): LoginServlet y LogoutServlet
+7. Vamos a hacer dos controladores (servlets): LoginCookieServlet y LogoutServlet
 8. Vamos a crear el servicio de Login: LoginService y LoginServiceImpl
 
 Observa el siguiente código:
