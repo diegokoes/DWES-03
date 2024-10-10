@@ -93,8 +93,18 @@ Vamos a partir de una página index.html muy sencilla con un menú para manejar 
 </html>
 ```
 
-
 Para poder comprar debemos haber hecho login (iniciado sesión). 
 
 Finalmente daremos un diseño con Bootstrap.
+
+## Modelo de datos
+
+Debemos añadir la clase ItemCarro para gestionar la cantidad de productos de un producto concreto.
+
+Esta clase estará compuesta de:
+
+```
+    private int cantidad;
+    private Producto producto;
+```
 
