@@ -43,9 +43,9 @@ Práctica guiada para mejorar el sistema de login (https://github.com/profeMelol
 <body>
 <h3>Manejo de cookies Http</h3>
 <ul>
-    <li><a href="/productos">mostrar productos html</a></li>
-    <li><a href="/login.html">login</a></li>
-    <li><a href="/logout">logout</a></li>
+    <li><a href="productos">mostrar productos html</a></li>
+    <li><a href="login.html">login</a></li>
+    <li><a href="logout">logout</a></li>
 </ul>
 
 </body>
