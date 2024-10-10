@@ -99,12 +99,11 @@ Si no hemos hecho login, saldrá el listado de productos sin el precio.
 
 Si has hecho login, te saldrá el listado de productos y una nueva oción de agrerar el producto al carro:
 
-![image](https://github.com/user-attachments/assets/a264de82-0341-4461-a207-ba8314c6212d)
+<img src="https://github.com/user-attachments/assets/a264de82-0341-4461-a207-ba8314c6212d" height="200px"/>
 
 Si compramos nos saldrá el carro con el producto comprado y el total:
 
-![image](https://github.com/user-attachments/assets/848d9984-2b7b-40f9-972c-61a29a9c2048)
-
+<img src="https://github.com/user-attachments/assets/848d9984-2b7b-40f9-972c-61a29a9c2048" height="200px"/>
 
 
 ## Modelo de datos
