@@ -70,3 +70,31 @@ No se debe abusar del almacenamiento de objetos en Session ya que al ser por cad
 
 
 # Ejercicio 2: carro de la compra
+
+Vamos a partir de una página index.html muy sencilla con un menú para manejar mi "tienda":
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carro de la compra</title>
+</head>
+<body>
+<h3>Manejo de cookies Http</h3>
+<ul>
+    <li><a href="productos">Mostrar productos html</a></li>
+    <li><a href="login">Login</a></li>
+    <li><a href="logout">Logout</a></li>
+    <li><a href="ver-carro">ver carro</a></li>
+</ul>
+
+</body>
+</html>
+```
+
+
+Para poder comprar debemos haber hecho login (iniciado sesión). 
+
+Finalmente daremos un diseño con Bootstrap.
+
