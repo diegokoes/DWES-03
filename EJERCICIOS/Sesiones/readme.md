@@ -142,4 +142,4 @@ Vamos a partir de este código para meter la funcionalidad:
         }
 ```
 
-Tengo que controlar que el producto no esté repetido y voy a tener en cuenta el id, nombre y precio como criterio para saber si dos productos son iguales.
+Tengo que controlar que el producto no esté repetido y voy a tener en cuenta el id y nombre como criterio para saber si dos productos son iguales.
