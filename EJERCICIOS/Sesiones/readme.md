@@ -131,3 +131,14 @@ public void addItemCarro(ItemCarro itemCarro)
 
 Hay que comprobar que solo puede haber un item del carro, porque lo que se modifica es la cantidad del mismo producto, no se añade otro item.
 
+Vamos a partir de este código para meter la funcionalidad:
+
+```
+        if (items.contains(itemCarro)) {
+
+                // ...
+        } else {
+            this.items.add(itemCarro);
+        }
+```
+
