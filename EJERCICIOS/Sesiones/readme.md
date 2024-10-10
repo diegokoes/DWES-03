@@ -97,7 +97,7 @@ Para poder comprar debemos haber hecho login (iniciado sesión).
 
 Si no hemos hecho login, saldrá el listado de productos sin el precio.
 
-Si has hecho login, te saldrá el listado de productos y una nueva oción de agrerar el producto al carro:
+Si has hecho login, te saldrá el listado de productos y una nueva opción de agrerar el producto al carro:
 
 <img src="https://github.com/user-attachments/assets/a264de82-0341-4461-a207-ba8314c6212d" height="200px"/>
 
