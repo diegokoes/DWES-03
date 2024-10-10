@@ -156,4 +156,10 @@ Para obtener el importe total del carro:
     }
 ```
 
-## Añadir al ProductoService nuevos métodos....
+## Añadir al ProductoService nuevos métodos
+
+### buscarProductoPorId
+
+```
+public Optional<Producto> buscarProductoPorId(Long id)
+```
