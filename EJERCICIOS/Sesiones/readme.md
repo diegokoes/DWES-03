@@ -132,7 +132,7 @@ Esta clase contendrá una lista de ItemCarro.
 
 En el constructor se inicializa la lista y solo tendrá el método get para obtener la lista.
 
-También tendrá los siguientes métodoa de comportamiento:
+También tendrá los siguientes métodos de comportamiento:
 
 #### addItemCarro
 
