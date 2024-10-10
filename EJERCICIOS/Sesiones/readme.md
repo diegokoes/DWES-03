@@ -49,6 +49,15 @@ No se debe abusar del almacenamiento de objetos en Session ya que al ser por cad
 - Crear un nuevo proyecto para tener un entorno limpio llamado **webapp-session.**
     - Para ello vamos a copiar el proyecto webapp-session y limpiamos todo menos lo relativo al ejercicio de login con sesiones.
 - Reutilizaremos los servlets **LoginCookieServlet y LogoutServlet** en los que cambiaremos el uso de cookies por HttpSession. Por tanto creamos **LoginSessionServlet y LogoutSessionServlet.**
+    - En el **doPost de LoginSessionServlet** implementaremos el código para añadir a la sesión el username (login):
+          ```
+              HttpSession session = req.getSession();
+            session.setAttribute("username", username);
+          ```
+    - En el **doGet de LoginSessionServlet** implementaremos el código para devolver una página como la siguiente:
+
+      ![image](https://github.com/user-attachments/assets/0c613f20-9036-4b0b-898a-82df3203a3e1)
+
 - Añadimos una implementación del servicio de login **LoginServiceSessionImpl**
 
 
