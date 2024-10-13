@@ -186,6 +186,7 @@ En el método doGet recogeremos el parámetro id.
 
 Buscaremos el producto por id para que si existe agregar el item del carro.
 
+Controlaremos si ya está el "carro" en la sesión.
 
 
 
