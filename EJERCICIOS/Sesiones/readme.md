@@ -194,5 +194,12 @@ Finalmente redirigimos al servlet encargado de ver el carro.
 
 Limpiamos todo la lógica de exportación a XSL.
 
+Este servlet se va a dedicar a generar la tabla HTML con la lista de productos.
+
+Debemos añadir una nueva columna en la tabla, la relativa a agregar el producto al carro.
+
+Observamos el código y para ello, vemos que es necesario editar la página **productos.jsp**.
+
+
 
 
