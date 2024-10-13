@@ -178,7 +178,7 @@ public Optional<Producto> buscarPorId(Long id);
 
 ## NUEVOS CONTROLADORES (servlets)
 
-### Renombrado LoginSessionServlet por LoginServlet
+### 1. Renombrado LoginSessionServlet por LoginServlet
 
 Por tanto hay que modificar el action de la página login.html.
 
@@ -189,7 +189,7 @@ En el método get comprobará si el usuario ha hecho sesión. Si es así mostrar
 ![image](https://github.com/user-attachments/assets/78d626d5-6ff7-4534-9402-6002f5e19cf2)
 
 
-### Creamos AgregarCarroServlet
+### 2. Creamos AgregarCarroServlet
 
 Con este url-mapping:
 ```
@@ -204,7 +204,7 @@ Controlaremos si ya está el "carro" en la sesión.
 
 Finalmente redirigimos al servlet encargado de ver el carro.
 
-### Renombrado ProductoXslServlet por ProductoServlet
+### 3. Renombrado ProductoXslServlet por ProductoServlet
 
 Limpiamos todo la lógica de exportación a XSL.
 
@@ -214,7 +214,7 @@ Debemos añadir una nueva columna en la tabla, la relativa a agregar el producto
 
 Observamos el código y para ello, vemos que es necesario editar la página **productos.jsp**.
 
-### Ver carro compra: creamos VerCarroServlet
+### 4. Ver carro compra: creamos VerCarroServlet
 
 Es un servlet muy sencillo que "redirige" a una página JSP que mostrará el carro de la compra:
 
