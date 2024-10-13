@@ -190,5 +190,9 @@ Controlaremos si ya está el "carro" en la sesión.
 
 Finalmente redirigimos al servlet encargado de ver el carro.
 
+### Renombrado ProductoXslServlet por ProductoServlet
+
+Limpiamos todo la lógica de exportación a XSL.
+
 
 
