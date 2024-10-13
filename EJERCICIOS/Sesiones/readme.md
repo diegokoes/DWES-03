@@ -240,7 +240,7 @@ public class VerCarroServlet extends HttpServlet {
 
 Como funcionalidad extra del carro de compras se pide que se pueda actualizar la cantidad y eliminar los ítems:
 
-![image](https://github.com/user-attachments/assets/fa340c1a-61a0-4b19-986a-e6a0b97ab8e0)
+![image](https://github.com/user-attachments/assets/3bc246cc-5db2-4114-a43f-6c8715dd9c01)
 
 
 Actualizar la cantidad mediante un campo cantidad en cada linea del carro y eliminar mediante checkboxes seleccionables por cada ítems del carro.
