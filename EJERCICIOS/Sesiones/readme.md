@@ -202,6 +202,24 @@ Observamos el código y para ello, vemos que es necesario editar la página **pr
 
 ### Ver carro compra: creamos VerCarroServlet
 
+Es un servlet muy sencillo que "redirige" a una página JSP que mostrará el carro de la compra:
 
+```
+@WebServlet("/carro/ver")
+public class VerCarroServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        getServletContext().getRequestDispatcher("/carro.jsp").forward(request, response);
+
+    }
+
+
+}
+
+```
 
 
