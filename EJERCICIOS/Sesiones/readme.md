@@ -236,4 +236,14 @@ public class VerCarroServlet extends HttpServlet {
 
 ```
 
+# Ejercicio 3: ampliar carro de la compra con actualizar y eliminar items del carro de compras
+
+Como funcionalidad extra del carro de compras se pide que se pueda actualizar la cantidad y eliminar los ítems:
+
+![image](https://github.com/user-attachments/assets/fa340c1a-61a0-4b19-986a-e6a0b97ab8e0)
+
+
+Actualizar la cantidad mediante un campo cantidad en cada linea del carro y eliminar mediante checkboxes seleccionables por cada ítems del carro.
+
+Para eso se necesita de un formulario anidado en la vista carro.jsp y un nuevo servlet llamado ActualizarCarroServlet para actualizar los ítems del carro, también de un par de métodos en la clase Carro para eliminar y actualizar productos.
 
