@@ -179,7 +179,7 @@ public Optional<Producto> buscarPorId(Long id);
 
 Con este url-mapping:
 ```
-@WebServlet("/agregar-carro")
+@WebServlet("/carro/agregar")
 ```
 
 En el método doGet recogeremos el parámetro id.
@@ -187,6 +187,8 @@ En el método doGet recogeremos el parámetro id.
 Buscaremos el producto por id para que si existe agregar el item del carro.
 
 Controlaremos si ya está el "carro" en la sesión.
+
+Finalmente redirigimos al servlet encargado de ver el carro.
 
 
 
