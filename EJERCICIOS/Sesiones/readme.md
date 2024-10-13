@@ -245,5 +245,8 @@ Como funcionalidad extra del carro de compras se pide que se pueda actualizar la
 
 Actualizar la cantidad mediante un campo cantidad en cada linea del carro y eliminar mediante checkboxes seleccionables por cada ítems del carro.
 
-Para eso se necesita de un formulario anidado en la vista carro.jsp y un nuevo servlet llamado ActualizarCarroServlet para actualizar los ítems del carro, también de un par de métodos en la clase Carro para eliminar y actualizar productos.
+**Para eso se necesita:**
+- Un formulario en la vista carro.jsp.
+- Un nuevo servlet llamado ActualizarCarroServlet para actualizar los ítems del carro (/carro/actualizar).
+- Un par de métodos en la clase Carro para eliminar y actualizar productos.
 
