@@ -164,6 +164,9 @@ Para obtener el importe total del carro:
         // ....
     }
 ```
+#### getItems()
+
+Implementamos ese método getter para obtener la lista de items del carro.
 
 ## SERVICIOS: Añadir al ProductoService nuevos métodos
 
