@@ -170,7 +170,7 @@ Para obtener el importe total del carro:
 ### buscarProductoPorId
 
 ```
-public Optional<Producto> buscarProductoPorId(Long id)
+public Optional<Producto> buscarPorId(Long id);
 ```
 
 ## Nuevos controladores (servlets)
