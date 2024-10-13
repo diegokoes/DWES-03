@@ -200,6 +200,8 @@ Debemos añadir una nueva columna en la tabla, la relativa a agregar el producto
 
 Observamos el código y para ello, vemos que es necesario editar la página **productos.jsp**.
 
+### Ver carro compra: creamos VerCarroServlet
+
 
 
 
