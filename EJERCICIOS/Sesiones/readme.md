@@ -106,7 +106,7 @@ Si compramos nos saldrá el carro con el producto comprado y el total:
 <img src="https://github.com/user-attachments/assets/848d9984-2b7b-40f9-972c-61a29a9c2048" height="200px"/>
 
 
-## Modelo de datos
+## MODELO DE DATOS
 
 ### Clase ItemCarro
 Debemos añadir la clase ItemCarro para gestionar la cantidad de productos de un producto concreto.
@@ -165,7 +165,7 @@ Para obtener el importe total del carro:
     }
 ```
 
-## Añadir al ProductoService nuevos métodos
+## SERVICIOS: Añadir al ProductoService nuevos métodos
 
 ### buscarProductoPorId
 
@@ -173,5 +173,19 @@ Para obtener el importe total del carro:
 public Optional<Producto> buscarPorId(Long id);
 ```
 
-## Nuevos controladores (servlets)
+## NUEVOS CONTROLADORES (servlets)
+
+### Creamos AgregarCarroServlet
+
+Con este url-mapping:
+```
+@WebServlet("/agregar-carro")
+```
+
+En el método doGet recogeremos el parámetro id.
+
+Buscaremos el producto por id para que si existe agregar el item del carro.
+
+
+
 
