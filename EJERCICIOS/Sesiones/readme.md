@@ -178,6 +178,17 @@ public Optional<Producto> buscarPorId(Long id);
 
 ## NUEVOS CONTROLADORES (servlets)
 
+### Renombrado LoginSessionServlet por LoginServlet
+
+Por tanto hay que modificar el action de la página login.html.
+
+Este servlet en el metodo post gestionará el login y pwd del usuario.
+
+En el método get comprobará si el usuario ha hecho sesión. Si es así mostrará una página de bienvenido y si no, devolverá la página login.html para que se registre.
+
+![image](https://github.com/user-attachments/assets/78d626d5-6ff7-4534-9402-6002f5e19cf2)
+
+
 ### Creamos AgregarCarroServlet
 
 Con este url-mapping:
