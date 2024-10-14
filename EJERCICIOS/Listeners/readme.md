@@ -79,4 +79,17 @@ public class AppListener implements ServletContextListener,
 
 ```
 
+El fichero de log del servidor de aplicaciones, en nuestro caso Wildfly integrado en Visual Studio Code, podemos encontrarlo editando la configuración del servidor:
+
+![image](https://github.com/user-attachments/assets/bd0cd47e-021f-4e05-ba31-afa723ba4341)
+
+
 # Ejercicio 2: ampliar el carrito de la compra con listeners
+
+Vamos a descomentar el código que crea atributos de contexto y request y que al crear la sesión se inicializa el carro.
+
+Modifica el código oportuno en AgregarCarroServlet para que usar la instancia del carro del listener.
+
+Por otro lado, muestra en la vista de los productos del carro, la información de las dos atributos "mensaje":
+
+![image](https://github.com/user-attachments/assets/48400e12-0d24-489a-a888-757923071b90)
