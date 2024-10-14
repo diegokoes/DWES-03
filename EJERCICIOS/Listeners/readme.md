@@ -20,3 +20,8 @@ public class MiSessionListener implements HttpSessionListener {
 }
 
 ```
+
+# Ejercicio 1: amplicar el carrito de la compra con listeners
+
+Vamos a crear un nuevo paquete listeners.
+
