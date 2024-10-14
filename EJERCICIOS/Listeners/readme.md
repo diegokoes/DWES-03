@@ -21,7 +21,7 @@ public class MiSessionListener implements HttpSessionListener {
 
 ```
 
-# Ejercicio 1: ampliar el carrito de la compra con listeners
+# Ejercicio 1: tracear en el fichero de log los métodos de Listener
 
 Vamos a crear un **nuevo paquete listeners.**
 
@@ -40,30 +40,30 @@ public class AppListener implements ServletContextListener,
     public void contextInitialized(ServletContextEvent sce) {
         servletContext = sce.getServletContext();
 
-        servletContext.log("inicializando la aplicacion!");
+        servletContext.log("******** inicializando la aplicacion!");
         
         //servletContext.setAttribute("mensaje", "algun valor global de la app!");
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        servletContext.log("destruyendo la aplicacion!");
+        servletContext.log("******** destruyendo la aplicacion!");
     }
 
     @Override
     public void requestInitialized(ServletRequestEvent sre) {
-        servletContext.log("inicializando el request!");
+        servletContext.log("******** inicializando el request!");
         //sre.getServletRequest().setAttribute("mensaje", "guardando algun valor para el request");
     }
 
     @Override
     public void requestDestroyed(ServletRequestEvent sre) {
-        servletContext.log("destruyendo el request!");
+        servletContext.log("******** destruyendo el request!");
     }
 
     @Override
     public void sessionCreated(HttpSessionEvent se) {
-        servletContext.log("inicializando la sesion http");
+        servletContext.log("******** inicializando la sesion http");
 
         // En vez de crear el carro en el servlet AgregarCarro
         // Carro carro = new Carro();
@@ -73,9 +73,10 @@ public class AppListener implements ServletContextListener,
 
     @Override
     public void sessionDestroyed(HttpSessionEvent se) {
-        servletContext.log("destruyendo la sesion http");
+        servletContext.log("******** destruyendo la sesion http");
     }
 }
 
 ```
 
+# Ejercicio 2: ampliar el carrito de la compra con listeners
