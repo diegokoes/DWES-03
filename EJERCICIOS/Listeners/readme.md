@@ -92,4 +92,4 @@ Modifica el código oportuno en AgregarCarroServlet para que usar la instancia d
 
 Por otro lado, muestra en la vista de los productos del carro, la información de las dos atributos "mensaje":
 
-<img src=" https://github.com/user-attachments/assets/48400e12-0d24-489a-a888-757923071b90" height="200px"/>
+<img src="https://github.com/user-attachments/assets/48400e12-0d24-489a-a888-757923071b90" height="200px"/>
