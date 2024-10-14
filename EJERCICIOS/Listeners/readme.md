@@ -40,7 +40,7 @@ public class AppListener implements ServletContextListener,
     public void contextInitialized(ServletContextEvent sce) {
         sce.getServletContext().log("inicializando la aplicacion!");
         servletContext = sce.getServletContext();
-        servletContext.setAttribute("mensaje", "algun valor global de la app!");
+        //servletContext.setAttribute("mensaje", "algun valor global de la app!");
     }
 
     @Override
@@ -51,7 +51,7 @@ public class AppListener implements ServletContextListener,
     @Override
     public void requestInitialized(ServletRequestEvent sre) {
         servletContext.log("inicializando el request!");
-        sre.getServletRequest().setAttribute("mensaje", "guardando algun valor para el request");
+        //sre.getServletRequest().setAttribute("mensaje", "guardando algun valor para el request");
     }
 
     @Override
@@ -62,9 +62,11 @@ public class AppListener implements ServletContextListener,
     @Override
     public void sessionCreated(HttpSessionEvent se) {
         servletContext.log("inicializando la sesion http");
-        Carro carro = new Carro();
-        HttpSession session = se.getSession();
-        session.setAttribute("carro", carro);
+
+        // En vez de crear el carro en el servlet AgregarCarro
+        // Carro carro = new Carro();
+        // HttpSession session = se.getSession();
+        // session.setAttribute("carro", carro);
     }
 
     @Override
