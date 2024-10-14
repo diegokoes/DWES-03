@@ -1,4 +1,4 @@
-# Ejemplo de un sencillo Listener
+# Ejemplo de un sencillo Listener de sesión
 
 ```
 import jakarta.servlet.http.HttpSessionEvent;
