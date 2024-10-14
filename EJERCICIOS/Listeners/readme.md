@@ -25,5 +25,7 @@ public class MiSessionListener implements HttpSessionListener {
 
 Vamos a crear un **nuevo paquete listeners.**
 
-Creamos la clase **AppListener**
+Creamos la clase **AppListener** que implemente **ServletContextListener**, **ServletRequestListener** y **HttpSessionListener**, por tanto usaremos el mismo listener para esos tres ámbitos.
+
+
 
