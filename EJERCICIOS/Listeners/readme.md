@@ -38,8 +38,10 @@ public class AppListener implements ServletContextListener,
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        sce.getServletContext().log("inicializando la aplicacion!");
         servletContext = sce.getServletContext();
+
+        servletContext.log("inicializando la aplicacion!");
+        
         //servletContext.setAttribute("mensaje", "algun valor global de la app!");
     }
 
