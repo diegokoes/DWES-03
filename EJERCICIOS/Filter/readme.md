@@ -89,6 +89,7 @@ En el método doFilter hacemos la comprobación de si el usuario ha hecho login 
     }
 ```
 
+Modifica en el proyecto la lógica que realizaba esta validación cuando no se usaban filtros.
 
 
 
