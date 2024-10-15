@@ -57,7 +57,7 @@ El filtro obtiene el token de autenticación desde el **encabezado Authorization
 
 La llamada a **chain.doFilter(request, response)** permite que la solicitud siga su curso hacia el siguiente filtro o recurso (como un servlet o controlador), ya que el usuario está autenticado, por ejemplo se ejecutaría un servlet mapeado a /api/protegido/listar-productos (causante en su llamada de la ejecución del filtro).
 
-# Ejercicio 1
+# Ejercicio 1: filtro que valida la sesión de usuario o login
 
 Vamos a crear un nuevo paquete **filters**.
 
@@ -73,6 +73,21 @@ Diseñamos el filtro para que se dispare ante las URL /carro/* /producto/*
 @WebFilter({"/carro/*", "/productos/*"})
 ```
 
+En el método doFilter hacemos la comprobación de si el usuario ha hecho login en nuestra aplicación:
+
+```
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        LoginService service = new LoginServiceSessionImpl();
+        Optional<String> username = service.getUsername((HttpServletRequest) request);
+        if (username.isPresent()) {
+            chain.doFilter(request, response);
+        } else {
+            ((HttpServletResponse)response).sendError(HttpServletResponse.SC_UNAUTHORIZED,
+                    "Lo sentimos no estas autorizado para ingresar a esta pagina!");
+        }
+    }
+```
 
 
 
