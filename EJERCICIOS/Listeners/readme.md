@@ -23,7 +23,7 @@ public class MiSessionListener implements HttpSessionListener {
 
 ```
 
-## Inicialización de Firebase
+## Ejemplo de listener contexto de inicialización de Firebase 
 
 clase de inicialización que carga el archivo de configuración de Firebase. 
 
