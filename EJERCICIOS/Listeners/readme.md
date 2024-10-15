@@ -86,7 +86,7 @@ El fichero de log del servidor de aplicaciones, en nuestro caso Wildfly integrad
 
 # Ejercicio 2: ampliar el carrito de la compra con listeners
 
-Vamos a descomentar el código que crea atributos de contexto y request y que al crear la sesión se inicializa el carro.
+En AppListener vamos a descomentar el código que crea atributos de contexto y request y que al crear la sesión se inicializa el carro.
 
 Modifica el código oportuno en AgregarCarroServlet para que usar la instancia del carro del listener.
 
