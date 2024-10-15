@@ -1,4 +1,6 @@
-# Ejemplo de un sencillo Listener de sesión
+# Ejemplos
+
+## Ejemplo de un sencillo Listener de sesión
 
 ```
 import jakarta.servlet.http.HttpSessionEvent;
@@ -16,6 +18,43 @@ public class MiSessionListener implements HttpSessionListener {
     @Override
     public void sessionDestroyed(HttpSessionEvent event) {
         System.out.println("Sesión destruida: " + event.getSession().getId());
+    }
+}
+
+```
+
+## Inicialización de Firebase
+
+clase de inicialización que carga el archivo de configuración de Firebase. 
+
+Esta clase se puede inicializar al inicio de la aplicación usando un ServletContextListener.
+
+```
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class FirebaseInitializer implements ServletContextListener {
+    @Override
+    public void contextInitialized(ServletContextEvent sce) {
+        try {
+            FileInputStream serviceAccount = new FileInputStream("path/to/firebase-adminsdk.json");
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                    .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                    .build();
+            FirebaseApp.initializeApp(options);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void contextDestroyed(ServletContextEvent sce) {
+        // Método opcional para limpiar recursos, si fuera necesario
     }
 }
 
