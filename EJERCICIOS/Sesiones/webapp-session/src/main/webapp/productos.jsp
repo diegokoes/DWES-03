@@ -24,10 +24,9 @@
         <%
             LoginService auth = new LoginServiceImpl();
 
-            // PENDIENTE CAMBIAR A SESIÓN
-            Optional<String> cookieOpt = auth.getUserName(request);
-            if (cookieOpt.isPresent())
-                out.print("Hola "+cookieOpt.get()+" bienvenido!!!!!");
+            Optional<String> sessionOpt = auth.getUserName(request);
+            if (sessionOpt.isPresent())
+                out.print("Hola "+sessionOpt.get()+" bienvenido!!!!!");
             else
                 out.print("NO REGISTRADO!!!");
         %>
@@ -39,7 +38,10 @@
             <th>ID</th>
             <th>NOMBRE</th>
             <th>TIPO</th>
-            <th>PRECIO</th>
+            <% if (sessionOpt.isPresent()) {%>
+                <th>PRECIO</th>
+                <th>AGREGAR</th>
+            <%}%>
         </thead>
         <tbody>
             <%
@@ -51,8 +53,10 @@
                     out.println("<td>"+p.getNombre()+"</td>");
                     out.println("<td>"+p.getTipo()+"</td>");
 
-                    if (cookieOpt.isPresent())
+                    if (sessionOpt.isPresent()){
                         out.println("<td>"+p.getPrecio()+"</td>");
+                        out.println("<td><a href='carro/agregar?id="+p.getId()+"'>Agregar producto</a></td>");
+                    }
 
                     out.println("</tr>");
                 }

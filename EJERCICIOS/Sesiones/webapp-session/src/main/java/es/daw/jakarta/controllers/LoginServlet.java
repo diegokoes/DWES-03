@@ -12,6 +12,7 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
@@ -61,11 +62,10 @@ public class LoginServlet extends HttpServlet {
 
         // 2. Procesarlos
 
-        
+        if (USERNAME.equals(login) && PASSWORD.equals(pwd)){ // hemos ido a BD y comprobado que existe el usuario
 
-        if (USERNAME.equals(login) && PASSWORD.equals(pwd)){
-
-            // session !!!!!
+            HttpSession session = request.getSession(); 
+            session.setAttribute("username", login);           
 
             doGet(request,response);
 
