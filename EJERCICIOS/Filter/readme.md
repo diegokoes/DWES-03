@@ -56,3 +56,15 @@ La clase **FiltroAutenticacion** implementa la interfaz Filter, lo cual requiere
 El filtro obtiene el token de autenticación desde el **encabezado Authorization** de la solicitud HTTP. En aplicaciones reales, este encabezado suele contener un token JWT o una clave de acceso.
 
 La llamada a **chain.doFilter(request, response)** permite que la solicitud siga su curso hacia el siguiente filtro o recurso (como un servlet o controlador), ya que el usuario está autenticado, por ejemplo se ejecutaría un servlet mapeado a /api/protegido/listar-productos (causante en su llamada de la ejecución del filtro).
+
+# Ejercicio 1
+
+Vamos a crear un nuevo paquete **filters**.
+
+Creamos un nuevo filtro llamado **LoginFiltro**. Será una clase que implemente la interface Filter.
+
+De los tres métodos de la interface, el init y destroy son opcionales. El ciclo de vida de un filtro es similar al de un servlet.
+
+
+
+
