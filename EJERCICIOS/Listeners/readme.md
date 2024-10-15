@@ -90,6 +90,6 @@ En AppListener vamos a descomentar el código que crea atributos de contexto y r
 
 Modifica el código oportuno en AgregarCarroServlet para que usar la instancia del carro del listener.
 
-Por otro lado, muestra en la vista de los productos del carro, la información de las dos atributos "mensaje":
+Por otro lado, muestra en la vista de los productos del carro, la información de los dos atributos "mensaje":
 
 <img src="https://github.com/user-attachments/assets/48400e12-0d24-489a-a888-757923071b90" height="200px"/>
