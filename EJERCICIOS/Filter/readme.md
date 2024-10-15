@@ -91,5 +91,7 @@ En el método doFilter hacemos la comprobación de si el usuario ha hecho login 
 
 Haz las pruebas oportunas para comprobar que no podemos mostrar productos ni ver el carro de la compra si no hemos hecho login.
 
+Podemos agregar todas las rutas (funcionalidades) de mi aplicación que requieren sesión.
+
 
 
