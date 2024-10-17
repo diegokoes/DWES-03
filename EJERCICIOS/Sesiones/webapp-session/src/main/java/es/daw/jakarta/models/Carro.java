@@ -18,11 +18,16 @@ public class Carro {
 
     public void addItemCarro(ItemCarro itemCarro){
         // Hay que controlar si existe ya previamente el item en el carro
-
-        // Si existe incremento la cantidad en 1
-
-        // Si no existe añado el item del Carro
-        items.add(itemCarro);
+        if (items.contains(itemCarro)){
+            // Si existe incremento la cantidad en 1
+            int pos = items.indexOf(itemCarro);
+            ItemCarro item = items.get(pos);
+            item.setCantidad(item.getCantidad()+1);
+       }
+       else{
+            // Si no existe añado el item del Carro
+            items.add(itemCarro);
+       }
     }
 
     public int getTotal(){
@@ -32,10 +37,18 @@ public class Carro {
         // sumatorio del precio
         // devolver el total
 
+        // int precioTotal = 0;
+        
+        // for (ItemCarro itemCarro : items) {
+        //     precioTotal += itemCarro.getImporte();            
+        // }
+
+        // return precioTotal;
+
         // FORMA API STREAM (FUNCIONAL)
         //Dame el sumatorio de todos los precios de los productos de la lista
-
-        return 0;
+        //return items.stream().mapToInt(i -> i.getImporte()).sum();
+        return items.stream().mapToInt(ItemCarro::getImporte).sum();
 
     }
 

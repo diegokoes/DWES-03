@@ -83,5 +83,11 @@ public class ProductServiceImpl implements ProductService{
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'listar'");
     }
+
+    @Override
+    public Optional<Producto> buscarPorId(Long id) {
+
+        return listar().stream().filter( p -> p.getId().equals(id)).findAny();
+    }
     
 }

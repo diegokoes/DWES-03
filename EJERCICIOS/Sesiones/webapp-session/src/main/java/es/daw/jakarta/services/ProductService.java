@@ -18,5 +18,7 @@ public interface ProductService {
 
     public Producto buscarProducto2(String name);
 
+    public Optional<Producto> buscarPorId(Long id);
+
 
 }
