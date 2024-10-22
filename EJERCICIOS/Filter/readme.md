@@ -63,7 +63,7 @@ Vamos a crear un nuevo paquete **filters**.
 
 Creamos un nuevo filtro llamado **LoginFiltro**. Será una clase que implemente la interface Filter.
 
-De los tres métodos de la interface, el init y destroy son opcionales. Solo es obligatorio doFilter porque es el método abstracto. El ciclo de vida de un filtro es similar al de un servlet. Observa la documentación:
+De los tres métodos de la interface, el init y destroy no es obligatorio implementarlos porque son default. Solo es obligatorio doFilter porque es el método abstracto. El ciclo de vida de un filtro es similar al de un servlet. Observa la documentación:
 
 ![image](https://github.com/user-attachments/assets/62e99323-5173-47b5-abfc-17ad5b6472e7)
 
